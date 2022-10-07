@@ -1,0 +1,49 @@
+{% include 'base.html' %}
+
+<div class ="container d-flex justify-content-center align-items-center"  style="min-height: 100vh;">
+    <div>
+        <h1 style="text-align:center; font-weight: bolder;">PLASMA DONATION</h1>
+
+        <div class="media">
+          <h3 class="media-heading" style="font-weight: bolder;">Plasma donation</h3>
+            <div class="media-left">
+                <img class="media-object" src="{{url_for('static', filename='image1.jpg')}}" style="height: 250px; width: 400px;">
+            </div>
+            <div class="media-body">
+             
+              <p>
+              “Money is not the only commodity that is fun to give. We can give time, we can give our expertise, we can give our love, or simply give a smile. What does that cost? The point is, none of us can ever run out of something worthwhile to give.              </p>
+            </div>
+        </div>
+        
+        
+          <div class="media">
+            <h3 class="media-heading" ; style="font-weight: bolder;">Donation centers</h3>
+            <div class="media-left">
+                <img class="media-object" src="{{url_for('static', filename='world.png')}}" style="height: 250px; width: 400px;">
+            </div>
+            <div class="media-body">
+              
+              <p>
+                Raise global awareness about source plasma collection.Recognize the contributions of plasma donors to saving and improving lives.Increase understanding about lifesaving plasma protein therapies and rare diseases.              </p>
+            </div>
+          </div> 
+          <div class="media">
+            <h3 class="media-heading" style="font-weight: bolder;">Eligible of donation</h3>
+            <div class="media-left">
+                <img class="media-object" src="{{url_for('static', filename='eligible.png')}}" style="height: 250px; width: 400px;">
+            </div>
+            <div class="media-body">
+              
+              <p><ol>
+                <li>Plasma donors should be at least 18 years old</li>
+                  <li>Plasma donors should weigh at least 110 pounds or 50 kilograms</li>
+                    <li>Must pass a medical examination</li>
+                      <li>Complete an extensive medical history screening</li>         </p>
+            </div>
+          </div> 
+    </div>
+</div>    
+
+
+{% include 'footer.html' %}
