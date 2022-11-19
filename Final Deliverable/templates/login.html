@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>PlasDo</title>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	
+
+<style>
+.login{
+top: 40%;
+}
+h3{
+	font-family:arial;
+	color:blue;
+	text-align:center;
+}
+.a{
+	text-align: left;
+	width:50%;
+	text-align:center;
+}
+.login { 
+	position: absolute;
+	top: 30%;
+	left: 75%;
+	margin: 25px 0 0 -150px;
+	width:400px;
+	height:400px;
+}
+</style>
+</head>
+<div class a>
+	<img src="https://images.thequint.com/thequint/2021-04/ad725260-6e4d-4237-9ee3-fed78e52c3c7/Hero_Image__1_.jpg?auto=format,compress&fmt=webp&format=webp&w=1200&h=900&dpr=1.0" alt="Girl in a jacket" width="800" height="650">
+	</div>
+<body>
+	
+	<div class="header">
+<div>PlasDo</div>
+	<ul>
+		
+		
+		
+		<li><a href="/registration">Register</a></li>
+		<li><a class="active" href="/login">Home</a></li>
+	</ul>
+</div>
+ <div class="login" >
+		<div>
+		</div>
+    <h3>Plasma Donor Application</h3>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('loginpage')}}"method="post">
+    	<input type="text" name="username" placeholder="Enter UserName" required="required" style="color:black" />
+        <input type="password" name="password" placeholder="Enter Password" required="required" style="color:black" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+    
+    </form>
+<br><br>
+<div style="color:black">
+ {{ msg }}</div>
+ </div>
+
+</body>
+</html>
